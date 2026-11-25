@@ -1,0 +1,3 @@
+Set WSHShell = CreateObject("WScript.Shell")
+WSHShell.CurrentDirectory = "C:\Users\HP\LibraryManagementSystem"
+WSHShell.Run "cmd /c javac -cp ""lib\mysql-connector-j-26.7.0.jar"" -d out src\LoginFrame.java src\CreateAccountFrame.java src\PasswordUtil.java src\DBConnection.java src\Main.java src\UserDashboard.java src\Book.java src\BookDAO.java src\Member.java src\MemberDAO.java src\Issue.java src\IssueDAO.java src\ReturnDAO.java && java -cp ""out;lib\mysql-connector-j-26.7.0.jar"" LoginFrame", 0, False
